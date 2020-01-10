@@ -2,7 +2,7 @@
 
 Name:           gl-manpages
 Version:        1.1
-Release:        6.%{codate}%{?dist}
+Release:        7.%{codate}%{?dist}
 Summary:        OpenGL manpages
 
 License:        MIT and Open Publication
@@ -71,6 +71,9 @@ find $RPM_BUILD_ROOT%{_mandir}/man3/ -type f -size -100b | xargs sed -i -e 's/\.
 
 
 %changelog
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1.1-7.20130122
+- Mass rebuild 2013-12-27
+
 * Wed Feb 13 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.1-6.20130122
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
 
